@@ -78,7 +78,7 @@ jobs:
         with:
           changelog: CHANGELOG.md
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
       - name: create-release
         uses: softprops/action-gh-release@v2
         with:
